@@ -432,7 +432,7 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 8px 20px;
+  padding: 10px 25px;
 
     
 
@@ -470,7 +470,7 @@ display: flex;
 
 nav a {
   color: #fff;
-   font-size: clamp(10px, 1.2vw, 14px);
+   font-size: clamp(10px, 1.2vw, 20px);
   white-space: nowrap;
   margin: 0;
 }
@@ -908,6 +908,30 @@ img {
   }
 
 }
+
+@media (max-width: 1024px) {
+  nav a {
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .nav-container {
+    padding: 8px 15px;
+  }
+
+@media (max-width: 768px) {
+  nav {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 11px;
+  }
+
+  .logo {
+    font-size: 14px;
+  }
 
 @media (max-width: 576px){
   section {
