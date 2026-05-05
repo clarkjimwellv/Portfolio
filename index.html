@@ -1,0 +1,245 @@
+    <!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+   
+    
+</head>
+<body>
+
+    <div class="gradient-bg"></div>
+    
+    <div class="particles"></div>
+
+    <svg class="wave-bg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+  <path fill="rgba(56,189,248,0.15)" d="M0,160 C360,260 1080,60 1440,160 L1440,320 L0,320 Z"></path>
+</svg>
+
+    <svg class="wave-bg wave-2" viewBox="0 0 1440 320" preserveAspectRatio="none">
+  <path fill="rgba(139,92,246,0.12)" d="M0,200 C480,100 960,300 1440,180 L1440,320 L0,320 Z"></path>
+</svg>
+    
+    <header>
+  <div class="nav-container">
+    <h1 class="logo">Portfolio</h1>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section id="home" class="hero fade container text-center">
+
+  <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
+
+  <h2>Hello, I'm <span>Clark Jimwell Villahermosa</span></h2>
+
+  <h3 class="role">Aspiring Web Developer And Designer</h3>
+
+  <p class="tagline">
+    “Start where you are. Use what you have. Do what you can.”
+  </p>
+
+  <button class="btn" onclick="goProjects()">View Projects</button>
+</section>
+
+<section id="about" class="fade container">
+
+  <h2>About</h2>
+
+  <!-- TAB BUTTONS -->
+  <div class="about-tabs">
+    <button class="tab-btn active" onclick="showTab('me')">About Me</button>
+    <button class="tab-btn" onclick="showTab('edu')">Education</button>
+  </div>
+
+  <!-- TAB CONTENT -->
+  <div id="me" class="tab-content active">
+
+    <p>
+      Hello! I'm <strong>Clark Jimwell Villahermosa</strong>, a BSIT freshman and aspiring web developer. 
+      I am currently learning and improving my skills in building responsive and visually appealing websites.
+    </p>
+
+    <p>
+      I enjoy designing user interfaces, creating animations, and developing simple but clean web projects. 
+      One of the projects I’m most proud of is my Calendar project, where I applied my knowledge in layout and design.
+    </p>
+
+    <p>
+      I describe myself as a calm, hardworking, and consistent person. Even when things get challenging, 
+      I continue to push forward and improve step by step.
+    </p>
+
+ <p class="quote">
+      “Mataas mangarap, dahil ang pangarap ko ay hindi lang para sa akin.”
+    </p>
+      
+</div>
+     <div id="edu" class="tab-content">
+
+      <div class="timeline">
+
+  <div class="timeline-item">
+    <div class="dot"></div>
+    <div class="content">
+      <span class="year">2012 - 2019</span>
+      <h3>Bagong Silang Elementary School</h3>
+      <p>Primary Education</p>
+      <span class="badge graduated">Graduated</span>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="dot"></div>
+    <div class="content">
+      <span class="year">2019 - 2023</span>
+      <h3>Maria Clara High School</h3>
+      <p>Junior High School</p>
+      <span class="badge graduated">Graduated</span>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="dot"></div>
+    <div class="content">
+      <span class="year">2023 - 2025</span>
+      <h3>Emmanuel John Institute of Science and Technology</h3>
+      <p>Senior High School - ICT </p>
+      <span class="badge graduated">Graduated</span>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="dot"></div>
+    <div class="content">
+      <span class="year">2025 - Present</span>
+      <h3>Global Reciprocal Colleges</h3>
+      <p>Caloocan City — BSIT Program</p>
+      <span class="badge current">Currently Enrolled</span>
+    </div>
+  </div>
+
+</div>
+
+
+  </div>
+
+</section>
+
+<section id="projects" class="fade container">
+
+  <h2>My Projects</h2>
+
+  <div class="services-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="service-card">
+      <img src="images/githubprofile.jpg" alt="GitHub Profile">
+
+      <h3>Assignment 1: GitHub Profile</h3>
+      <p>A simple GitHub profile layout using HTML and CSS.</p>
+
+      <span class="tools">HTML • CSS</span>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="service-card">
+      <img src="images/flexbox.jpg" alt="Flexbox Project">
+
+      <h3>Assignment 2: Flexbox Layout</h3>
+      <p>Practice project focused on CSS Flexbox and responsive layout design.</p>
+
+      <span class="tools">HTML • CSS (Flexbox)</span>
+    </div>
+
+    <!-- PROJECT 3 (CLICKABLE) -->
+    <a href="https://clarkjimwellv.github.io/Calendar-2026/" target="_blank" class="service-card link-card">
+
+      <img src="images/calendar.jpg" alt="Calendar Project">
+
+      <h3>Activity & Assignment 3: Calendar 2026</h3>
+      <p>A responsive calendar design built with layout and UI styling.
+      <br>
+      (Click To View More)</p>
+
+      <span class="tools">HTML • CSS • JavaScript</span>
+
+    </a>
+
+    <!-- PROJECT 4 (CLICKABLE) -->
+    <a href="https://clarkjimwellv.github.io/Icon-names/" target="_blank" class="service-card link-card">
+
+      <img src="images/iconnames.jpg" alt="Icon Names Project">
+
+      <h3>Activity & Assignment 4: Icon Names</h3>
+      <p>Project displaying Bootstrap icons with labels and clean layout.
+      
+      (Click To View More)</p>
+
+      <span class="tools">HTML • CSS • Bootstrap Icons</span>
+
+    </a>
+
+  </div>
+
+</section>
+
+<section id="skills.ui" class="fade container text-center">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Basic JavaScript</span>
+  </div>
+    
+</section><section id="contact" class="fade container text-center">
+  <h2>Contact</h2>
+    <a href="mailto:villahermosaclarkjimwell@gmail.com" target="_blank" class="social-item"">
+    <div class="social-icons">
+    <i class="bi bi-envelope-fill"></i>
+  <span>Gmail</span>
+        
+<br>
+    <a href="https://www.facebook.com/everyonehatesclark" target="_blank" class="social-item">
+    <i class="bi bi-facebook"></i>
+    <span>Facebook</span>
+  </a>
+
+  <a href="https://www.instagram.com/clarkjimwellv/" target="_blank" class="social-item">
+    <i class="bi bi-instagram"></i>
+    <span>Instagram</span>
+  </a>
+
+<a href="https://github.com/clarkjimwellv" target="_blank" class="social-item">
+  <i class="bi bi-github"></i>
+  <span>GitHub</span>
+</a>
+
+</section><footer>
+  <p>© 2026 Portfolio</p>
+</footer>
+
+        
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+        
+
+</body>
+</html>
