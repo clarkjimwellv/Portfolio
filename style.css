@@ -507,6 +507,31 @@ img {
   }
 }
 
+/* ===== NAV RESPONSIVE FIX (NO LAYOUT CHANGE) ===== */
+
+@media (max-width: 768px) {
+
+  .nav-container {
+    flex-wrap: wrap; /* allows items to go next line instead of overlapping */
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 12px; /* slightly smaller so it fits */
+    margin-left: 0; /* prevents extra spacing conflict */
+    white-space: nowrap; /* stops broken text wrapping */
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+}
 
 
 
