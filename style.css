@@ -457,7 +457,7 @@ header {
   text-shadow: 0 0 10px #38bdf8;
     font-size: 20px;
      flex-shrink: 0;
-  font-size: clamp(25px, 2vw, 30px);
+  font-size: clamp(25px, 2vw, 15px);
 }
 
 nav {
@@ -470,7 +470,7 @@ display: flex;
 
 nav a {
   color: #fff;
-   font-size: clamp(13px, 1.2vw, 30px);
+   font-size: clamp(13px, 1.2vw, 15px);
   white-space: nowrap;
   margin: 0;
 }
