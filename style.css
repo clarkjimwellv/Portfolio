@@ -916,7 +916,7 @@ img {
   }
 
   .nav-container {
-    padding: 8px 15px;
+    padding: 8px 13px;
   }
 
 @media (max-width: 768px) {
@@ -926,16 +926,16 @@ img {
   }
 
   nav a {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .logo {
-    font-size: 14px;
+    font-size: 18px;
   }
 
 @media (max-width: 576px){
   section {
-    padding: 60px 0;
+    padding: 40px 0;
   }
 
   .hero {
@@ -946,7 +946,7 @@ img {
 
 @media (min-width: 577px) and (max-width: 768px){
   section {
-    padding: 70px 0;
+    padding: 60px 0;
   }
 }
 
